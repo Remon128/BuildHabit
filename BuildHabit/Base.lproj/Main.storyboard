@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XFo-3e-4dx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!-- Reminders-->
+        <scene sceneID="wiE-iX-RcN">
+            <objects>
+                <tableViewController id="eao-6X-byW" customClass="ReminderTableViewController" customModule="BuildHabit" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="EPs-Gb-u9Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reminderCell" textLabel="Ezv-zE-TZy" detailTextLabel="pfd-cm-xhu" rowHeight="98" style="IBUITableViewCellStyleSubtitle" id="Hof-ms-xJn">
+                                <rect key="frame" x="0.0" y="28" width="375" height="98"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hof-ms-xJn" id="aV7-KE-grL">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="97.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ezv-zE-TZy">
+                                            <rect key="frame" x="16" y="20" width="41" height="26.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pfd-cm-xhu">
+                                            <rect key="frame" x="16" y="50.5" width="65.5" height="23"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="eao-6X-byW" id="Rnv-Rn-fjl"/>
+                            <outlet property="delegate" destination="eao-6X-byW" id="ku0-2J-G8d"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title=" Reminders" id="eNo-pr-RWj">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="9Yl-9z-Ms3">
+                            <connections>
+                                <segue destination="Qrw-3u-BMx" kind="presentation" id="Pv4-Fn-yjP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hdr-9g-rPI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-175.19999999999999" y="-21.139430284857571"/>
+        </scene>
+        <!--Add Reminder-->
+        <scene sceneID="5ED-M6-nZf">
+            <objects>
+                <viewController id="IQX-UU-iC7" customClass="AddReminderViewController" customModule="BuildHabit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3BC-F5-Rq7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CcI-uu-dmA">
+                                <rect key="frame" x="20" y="89" width="335" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tni-L7-oEX">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="35"/>
+                                        <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                        <state key="normal" title="Select your Target Habit">
+                                            <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleSelection:" destination="IQX-UU-iC7" eventType="touchUpInside" id="ZJE-8b-PdR"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AzB-UH-erX">
+                                        <rect key="frame" x="0.0" y="-89" width="335" height="0.0"/>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Reading"/>
+                                        <connections>
+                                            <action selector="habitTapped:" destination="IQX-UU-iC7" eventType="touchUpInside" id="QPI-bM-vIl"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKO-mJ-mn1">
+                                        <rect key="frame" x="0.0" y="-89" width="335" height="0.0"/>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Workouts"/>
+                                        <connections>
+                                            <action selector="habitTapped:" destination="IQX-UU-iC7" eventType="touchUpInside" id="AnM-1h-BlF"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ynf-nQ-Lr6">
+                                        <rect key="frame" x="0.0" y="-89" width="335" height="0.0"/>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Meditating"/>
+                                        <connections>
+                                            <action selector="habitTapped:" destination="IQX-UU-iC7" eventType="touchUpInside" id="EO1-Pn-cYr"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MpW-FI-Rk2">
+                                        <rect key="frame" x="0.0" y="-89" width="335" height="0.0"/>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Socializing"/>
+                                        <connections>
+                                            <action selector="habitTapped:" destination="IQX-UU-iC7" eventType="touchUpInside" id="y5V-N3-LZh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="MpW-FI-Rk2" secondAttribute="trailing" id="0ka-vk-xWj"/>
+                                    <constraint firstItem="tni-L7-oEX" firstAttribute="leading" secondItem="CcI-uu-dmA" secondAttribute="leading" id="2r1-MX-ira"/>
+                                    <constraint firstAttribute="trailing" secondItem="VKO-mJ-mn1" secondAttribute="trailing" id="CoT-1T-HbF"/>
+                                    <constraint firstAttribute="trailing" secondItem="AzB-UH-erX" secondAttribute="trailing" id="H97-fL-uGE"/>
+                                    <constraint firstItem="AzB-UH-erX" firstAttribute="leading" secondItem="CcI-uu-dmA" secondAttribute="leading" id="JAe-nf-h8B"/>
+                                    <constraint firstAttribute="trailing" secondItem="tni-L7-oEX" secondAttribute="trailing" id="ORO-Yz-xxb"/>
+                                    <constraint firstAttribute="trailing" secondItem="ynf-nQ-Lr6" secondAttribute="trailing" id="ZHk-T2-crB"/>
+                                    <constraint firstItem="VKO-mJ-mn1" firstAttribute="leading" secondItem="CcI-uu-dmA" secondAttribute="leading" id="brI-Uc-OCH"/>
+                                    <constraint firstItem="ynf-nQ-Lr6" firstAttribute="leading" secondItem="CcI-uu-dmA" secondAttribute="leading" id="mUM-j6-gkt"/>
+                                    <constraint firstItem="MpW-FI-Rk2" firstAttribute="leading" secondItem="CcI-uu-dmA" secondAttribute="leading" id="oZX-EN-sdd"/>
+                                </constraints>
+                            </stackView>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="EQJ-Pj-vai">
+                                <rect key="frame" x="35" y="345" width="320" height="216"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="551901051.018031">
+                                    <!--2018-06-28 17:50:51 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="timeChanged:" destination="IQX-UU-iC7" eventType="valueChanged" id="xBQ-oM-etF"/>
+                                </connections>
+                            </datePicker>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your habit name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mk0-RZ-nxV">
+                                <rect key="frame" x="20" y="307" width="335" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="0.80155714899999997" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="CcI-uu-dmA" firstAttribute="leading" secondItem="16H-ST-VE5" secondAttribute="leading" constant="20" id="5mY-Bb-bLH"/>
+                            <constraint firstItem="16H-ST-VE5" firstAttribute="trailing" secondItem="CcI-uu-dmA" secondAttribute="trailing" constant="20" id="MvE-W5-0dp"/>
+                            <constraint firstItem="CcI-uu-dmA" firstAttribute="top" secondItem="16H-ST-VE5" secondAttribute="top" constant="25" id="geb-zs-TYD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="16H-ST-VE5"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Reminder" id="zJk-fU-mj6">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="UCo-T9-Uzo">
+                            <connections>
+                                <action selector="cancel:" destination="IQX-UU-iC7" id="UjY-mI-U08"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="7Nk-GB-esg">
+                            <connections>
+                                <segue destination="B5b-On-2PU" kind="unwind" unwindAction="unwindToReminderListWithSender:" id="J3x-d0-fYL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="reminderTextField" destination="Mk0-RZ-nxV" id="6yq-e4-nfI"/>
+                        <outlet property="saveButton" destination="7Nk-GB-esg" id="uqJ-ga-9w7"/>
+                        <outlet property="timePicker" destination="EQJ-Pj-vai" id="mSH-uf-QYm"/>
+                        <outletCollection property="habitButtons" destination="AzB-UH-erX" collectionClass="NSMutableArray" id="IbC-9y-DSQ"/>
+                        <outletCollection property="habitButtons" destination="VKO-mJ-mn1" collectionClass="NSMutableArray" id="NLQ-aQ-Bs5"/>
+                        <outletCollection property="habitButtons" destination="ynf-nQ-Lr6" collectionClass="NSMutableArray" id="eP7-rX-TeO"/>
+                        <outletCollection property="habitButtons" destination="MpW-FI-Rk2" collectionClass="NSMutableArray" id="Fba-4w-OjA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d6a-NB-2KW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="B5b-On-2PU" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1717.5999999999999" y="-21.139430284857571"/>
+        </scene>
+        <!--Reminders Navigation Controller-->
+        <scene sceneID="Kdm-B1-ts3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XFo-3e-4dx" userLabel="Reminders Navigation Controller" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VL4-Bu-sR4">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eao-6X-byW" kind="relationship" relationship="rootViewController" id="pnE-QA-b8G"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y5m-U8-KeB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1052" y="-21"/>
+        </scene>
+        <!--Add Reminder Navigation Controller-->
+        <scene sceneID="xt0-Bb-hjI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qrw-3u-BMx" userLabel="Add Reminder Navigation Controller" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hKj-Yw-NqK">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="IQX-UU-iC7" kind="relationship" relationship="rootViewController" id="Nr5-iI-mLE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n5W-AM-hhR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="724.79999999999995" y="-21.589205397301352"/>
+        </scene>
+    </scenes>
+</document>
