@@ -11,12 +11,10 @@
 		598CF511AA177A5853517FF4 /* Pods_BuildHabitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 783BEA9158EC1D77B7CCAE87 /* Pods_BuildHabitTests.framework */; };
 		61BB188FCAB3DB4616E426E0 /* Pods_BuildHabit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A1366F6FEC4CBF6A0D868DE /* Pods_BuildHabit.framework */; };
 		84172ED920E81A3D0084E4BD /* AddReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84172ED820E81A3D0084E4BD /* AddReminderViewController.swift */; };
-		842BF69920B719E100E2F64D /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842BF69820B719E100E2F64D /* CustomTableViewCell.swift */; };
 		8439E41F20F39FA300FF594E /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8439E41E20F39FA300FF594E /* Media.xcassets */; };
 		8443CDD220E5584300025D2E /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443CDD120E5584300025D2E /* Reminder.swift */; };
 		8443CDD420E57A2300025D2E /* ReminderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443CDD320E57A2300025D2E /* ReminderTableViewController.swift */; };
 		846B04CB20AB7E4900D7C6FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B04CA20AB7E4900D7C6FF /* AppDelegate.swift */; };
-		846B04CD20AB7E4900D7C6FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B04CC20AB7E4900D7C6FF /* ViewController.swift */; };
 		846B04D020AB7E4900D7C6FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846B04CE20AB7E4900D7C6FF /* Main.storyboard */; };
 		846B04D520AB7E4900D7C6FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846B04D320AB7E4900D7C6FF /* LaunchScreen.storyboard */; };
 		846B04E020AB7E4900D7C6FF /* BuildHabitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B04DF20AB7E4900D7C6FF /* BuildHabitTests.swift */; };
@@ -55,13 +53,11 @@
 		8409EEEC20D14F220057273C /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8409EEEE20D14FBC0057273C /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84172ED820E81A3D0084E4BD /* AddReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderViewController.swift; sourceTree = "<group>"; };
-		842BF69820B719E100E2F64D /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		8439E41E20F39FA300FF594E /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		8443CDD120E5584300025D2E /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		8443CDD320E57A2300025D2E /* ReminderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderTableViewController.swift; sourceTree = "<group>"; };
 		846B04C720AB7E4900D7C6FF /* BuildHabit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuildHabit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		846B04CA20AB7E4900D7C6FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		846B04CC20AB7E4900D7C6FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		846B04CF20AB7E4900D7C6FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		846B04D420AB7E4900D7C6FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		846B04D620AB7E4900D7C6FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -146,14 +142,12 @@
 				84D97AE020F3E702000E347E /* Images */,
 				8474DDF020DAC7E200FAD35E /* GoogleService-Info.plist */,
 				846B04CA20AB7E4900D7C6FF /* AppDelegate.swift */,
-				846B04CC20AB7E4900D7C6FF /* ViewController.swift */,
 				846B04CE20AB7E4900D7C6FF /* Main.storyboard */,
 				8443CDD120E5584300025D2E /* Reminder.swift */,
 				8443CDD320E57A2300025D2E /* ReminderTableViewController.swift */,
 				84172ED820E81A3D0084E4BD /* AddReminderViewController.swift */,
 				846B04D320AB7E4900D7C6FF /* LaunchScreen.storyboard */,
 				846B04D620AB7E4900D7C6FF /* Info.plist */,
-				842BF69820B719E100E2F64D /* CustomTableViewCell.swift */,
 				8439E41E20F39FA300FF594E /* Media.xcassets */,
 			);
 			path = BuildHabit;
@@ -434,8 +428,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				842BF69920B719E100E2F64D /* CustomTableViewCell.swift in Sources */,
-				846B04CD20AB7E4900D7C6FF /* ViewController.swift in Sources */,
 				846B04CB20AB7E4900D7C6FF /* AppDelegate.swift in Sources */,
 				8443CDD420E57A2300025D2E /* ReminderTableViewController.swift in Sources */,
 				84172ED920E81A3D0084E4BD /* AddReminderViewController.swift in Sources */,

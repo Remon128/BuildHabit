@@ -221,19 +221,15 @@ class AddReminderViewController: UIViewController,UITextFieldDelegate {
             
             var urlx = Bundle.main.url(forResource: "Images/rose", withExtension: "jpeg")
             if(habitSelected == "reading"){
-              //  name = "My Reading Habit"
                 urlx = Bundle.main.url(forResource: "Images/read", withExtension: "jpg")
             }
             else if(habitSelected == "meditate"){
-              //  name = "My Meditation Habit"
                 urlx = Bundle.main.url(forResource: "Images/meditate", withExtension: "jpg")
             }
             else if(habitSelected == "workout_motivation"){
-              //  name = "My Workout Habit"
                 urlx = Bundle.main.url(forResource: "Images/workout", withExtension: "jpg")
             }
             else if(habitSelected == "social_life"){
-              //  name = "My Socializing Habit"
                 urlx = Bundle.main.url(forResource: "Images/socialize", withExtension: "jpg")
             }
             let attachment = try! UNNotificationAttachment(identifier: "image", url: urlx!, options: [:])
