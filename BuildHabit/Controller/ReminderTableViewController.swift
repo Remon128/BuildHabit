@@ -10,7 +10,7 @@ import UIKit
 
 class ReminderTableViewController: UITableViewController {
 
-    //Properties
+    //Properties of reminder
     var reminders = [Reminder]()
     let dateFormatter = DateFormatter()
     let locale = Locale.current
