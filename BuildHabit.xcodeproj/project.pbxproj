@@ -114,6 +114,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		846784DF210DF94A001EF466 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8443CDD120E5584300025D2E /* Reminder.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		846784E0210DF996001EF466 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				846B04CE20AB7E4900D7C6FF /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		846784E1210DF9BC001EF466 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84172ED820E81A3D0084E4BD /* AddReminderViewController.swift */,
+				8443CDD320E57A2300025D2E /* ReminderTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		846B04BE20AB7E4900D7C6FF = {
 			isa = PBXGroup;
 			children = (
@@ -139,13 +164,12 @@
 		846B04C920AB7E4900D7C6FF /* BuildHabit */ = {
 			isa = PBXGroup;
 			children = (
+				846784E1210DF9BC001EF466 /* Controller */,
+				846784E0210DF996001EF466 /* View */,
+				846784DF210DF94A001EF466 /* Model */,
 				84D97AE020F3E702000E347E /* Images */,
 				8474DDF020DAC7E200FAD35E /* GoogleService-Info.plist */,
 				846B04CA20AB7E4900D7C6FF /* AppDelegate.swift */,
-				846B04CE20AB7E4900D7C6FF /* Main.storyboard */,
-				8443CDD120E5584300025D2E /* Reminder.swift */,
-				8443CDD320E57A2300025D2E /* ReminderTableViewController.swift */,
-				84172ED820E81A3D0084E4BD /* AddReminderViewController.swift */,
 				846B04D320AB7E4900D7C6FF /* LaunchScreen.storyboard */,
 				846B04D620AB7E4900D7C6FF /* Info.plist */,
 				8439E41E20F39FA300FF594E /* Media.xcassets */,
